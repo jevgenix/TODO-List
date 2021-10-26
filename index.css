@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(120deg, rgb(230, 187, 230), #e5caf0);
+    color: rgb(10, 10, 10);
+}
+
+header {
+    font-size: 2rem;
+}
+
+header, form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form input, form button {
+    padding: 0.5rem;
+    font-size: 2.0rem;
+    border: none;
+    color: black;
+    background: white;
+}
+
+.todo-nappi {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #725AC1;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border-radius: 30px;
+    border: 2px solid #725AC1;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #291b57;
+}
+   
+.todo-nappi:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 black;
+}
+   
+.todo-nappi:active {
+    transform: scale(0.9);
+}
+
+.todo-kontti {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.todo-lista {
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo {
+    margin: 0.1rem;
+    background: whitesmoke;
+    color: black;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.8s ease;
+}
+.todo li {
+    flex: 1;
+}
+.delete-button, .check-button {
+    background: rgba(226, 29, 11, 0.753);
+    cursor: pointer;
+    
+    color: rgb(0, 255, 55);
+    border: none;
+    padding: 0.3rem;
+    font-size: 1.5rem;
+}
+.check-button {
+    background-color: green;
+    color: white;
+    width: 44px;
+}
+.item {
+    padding: 0rem 0.5rem;
+}
+span {
+    pointer-events: none;
+}
+.checked {
+    opacity: 0.7;
+}
+.checked li {
+    text-decoration: line-through;
+}
+
+select {
+    /* Reset Select */
+    appearance: none;
+    outline: 100px;
+    border: 2px solid #725AC1;
+    box-shadow: none;
+    /* Personalize */
+    flex: 1;
+    padding: 0 1em;
+    color: #725AC1;
+    background-color: var(--darkgray);
+    background-image: none;
+    cursor: pointer;
+  }
+  /* Remove IE arrow */
+  select::-ms-expand {
+    display: none;
+  }
+  /* Custom Select wrapper */
+  .select {
+    position: relative;
+    display: flex;
+    width: 10rem;
+    cursor: pointer;
+    height: 3.5em;
+    border-radius: .25em;
+    
+    
+  }
+  /* Arrow */
+  .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 18px;
+    background-color: #725AC1;
+    transition: .25s all ease;
+    pointer-events: none;
+  }
+  /* Transition */
+  .select:hover::after {
+    color: whitesmoke;
+  }
+  
+
+
