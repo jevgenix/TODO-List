@@ -9,7 +9,6 @@ todoNappi.addEventListener('click', addTodo);
 todoLista.addEventListener('click', deleteTodo);
 todoFiltteri.addEventListener('click', todoFilter);
 
-
 // FUNKTIOT
 // LISÄÄ TODO-FUNKTIO
 function addTodo(event) {
@@ -25,7 +24,6 @@ function addTodo(event) {
     li_elementti.innerText = todoSyote.value;
     li_elementti.classList.add("item");
     todoDiv.appendChild(li_elementti);
-
 
     // LUO TARKISTA-NAPPI
     var check_button = document.createElement("button");
