@@ -132,8 +132,6 @@ select {
     cursor: pointer;
     height: 3.5em;
     border-radius: .25em;
-    
-    
   }
   /* Arrow */
   .select::after {
@@ -150,6 +148,3 @@ select {
   .select:hover::after {
     color: whitesmoke;
   }
-  
-
-

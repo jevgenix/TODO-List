@@ -1,4 +1,5 @@
 // MUUTTUJAT
+// querySelector hakee dokumentin ensimmäinen elementin class="nimen" perusteella
 var todoSyote = document.querySelector('.todo-syote');
 var todoNappi = document.querySelector('.todo-nappi');
 var todoLista = document.querySelector('.todo-lista');
